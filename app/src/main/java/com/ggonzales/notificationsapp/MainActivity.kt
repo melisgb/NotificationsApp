@@ -18,11 +18,11 @@ class MainActivity : AppCompatActivity() {
         }
         channel2Button.setOnClickListener {
             notificationHelper!!.notify(2,
-                notificationHelper!!.getNotification("Second", inputEText.text.toString(), "second"))
+                                            notificationHelper!!.getNotification("Second", inputEText.text.toString(), "second"))
         }
         channel3Button.setOnClickListener {
             notificationHelper!!.notify(3,
-                notificationHelper!!.getNotification("Third", inputEText.text.toString(), "third"))
+                                            notificationHelper!!.getNotification("Third", inputEText.text.toString(), "third"))
         }
 
     }

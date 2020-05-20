@@ -5,6 +5,7 @@ import android.app.NotificationChannel
 import android.app.NotificationManager
 import android.content.Context
 import android.content.ContextWrapper
+import android.graphics.BitmapFactory
 import android.graphics.Color
 
 class NotificationHelper(context: Context) : ContextWrapper(context) {
@@ -33,6 +34,7 @@ class NotificationHelper(context: Context) : ContextWrapper(context) {
             .setContentTitle(title)
             .setContentText(body)
             .setSmallIcon(R.drawable.tictac)
+            .setLargeIcon(BitmapFactory.decodeResource(applicationContext.getResources(), R.drawable.tictac))
             .setAutoCancel(true)
     }
 
