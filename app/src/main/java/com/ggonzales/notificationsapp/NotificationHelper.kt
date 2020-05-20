@@ -33,7 +33,8 @@ class NotificationHelper(context: Context) : ContextWrapper(context) {
         return Notification.Builder(applicationContext, channelID )
             .setContentTitle(title)
             .setContentText(body)
-            .setSmallIcon(R.drawable.tictac)
+            .setSmallIcon(R.drawable.push_not__not)
+            .setColor(getColor(R.color.colorPrimaryDark))
             .setLargeIcon(BitmapFactory.decodeResource(applicationContext.getResources(), R.drawable.tictac))
             .setAutoCancel(true)
     }
